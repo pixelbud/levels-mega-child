@@ -1,0 +1,108 @@
+/* Set the typeface */
+.header {
+  font-family: 'Anonymous Pro', sans-serif;
+}
+
+.quote__text {
+  font-family: 'Anonymous Pro', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.u-highlight {
+  border-left: #EBEBEB solid 6px;
+  background: rgba(235,235,235,.5);
+  font-style: normal;
+  font-weight: 400; }
+
+body {
+  font-size: 1em;
+}
+
+body, .packages__title, .package__name {
+  font-family: 'Lora', serif;
+}
+
+/**
+ * Headings
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+.section-heading {
+  color: #444;
+  position: relative;
+  font-family: 'Anonymous Pro', sans-serif;
+  font-style: normal; }
+
+h1, h2 {
+  font-weight: 700;
+  font-style: normal;
+ }
+
+h3, h4, h5 {
+  color: #444; }
+
+.section-heading--with-line {
+  padding: 0 0 0.5em 0;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #ddd; }
+
+h1 {
+  font-size: 3.052em;
+}
+
+h2 {
+  font-size: 2.441em;
+}
+
+h3 {
+  font-size: 1.953em;
+}
+
+h4 {
+  font-size: 1.563em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+p a,
+blockquote a,
+.toc__list a,
+.post a {
+  color: #B71C1C;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: inset 0 -2px 0 0 rgba(183, 28, 28, 0.5);
+  -webkit-transition: all 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition: all 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+  p a:hover,
+  blockquote a:hover,
+  .toc__list a:hover,
+  .post a:hover {
+    box-shadow: none !important; }
+
+p, ul, ol {
+  color: #444;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0 0 1.5em 0; }
+
+/**
+ * Quotes
+ */
+
+ blockquote {
+   border-left: 6px solid #EBEBEB;
+   padding-left: 20px;
+   margin-left: 0; }
