@@ -41,23 +41,23 @@
             'header' => '',
             'ptext' => '',
             'action' => '',
-            'btn-class' => 'button',
-            'width' => '100%'
+            'btn_class' => 'large--default-outline',
+            'btn_text' => '100%'
         ), $atts, 'mm-callout'
       );
      // create callout
      return
       '<div class="callout-box callout-box--spaced mm-callout-box">' .
-      '<div class="callout-box__content-left"><h2>' $atts[header] . '</h2>' .
+      '<div class="callout-box__content-left"><h2>' . $atts[header] . '</h2>' .
       '<p class="u-center">' . $atts[ptext] . '</p></div>' .
       '<div class="callout-box__content-right">' .
-      '<form class="form-vertical" action="'. $atts[action] . '">'
+      '<form class="form-vertical" action="'. $atts[action] . '">' .
       '<div class="form-vertical__row"><label class="form-vertical__label" for="name">First Name</label>' .
       '<input class="form-input-text" name="name" type="text" /></div>' .
       '<div class="form-vertical__row"><label class="form-vertical__label" for="name">Email</label>' .
       '<input class="form-input-text" name="email" type="email" /></div>' .
-      '<div class="form-vertical__row--submit">'
-      '<button class="button" type="submit">Sign up for your free chapter</button>' . do_shortcode($content) . '</div></form></div></div>';
+      '<div class="form-vertical__row--submit">' .
+      '<button class="' . $atts[btn_class] . '" type="submit">' . $atts[btn_text] . '</button>' . do_shortcode($content) . '</div></form></div></div>';
    }
    add_shortcode('mm-callout', 'shortcode_mm_callout');
  ?>
