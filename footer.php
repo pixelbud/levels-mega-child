@@ -17,7 +17,7 @@
     <div class="container container--grid">
   		<div class="footer__bottom">
         <p class="footer__bottom-right"><?php echo get_option('footer_content_right') ?></p>
-        <p><?php echo get_option('footer_content_left') ?></p>
+        <p><?php echo get_search_form(); ?></p>
       </div>
     </div>
 	</footer><!-- #colophon -->

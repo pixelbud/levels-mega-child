@@ -11,7 +11,10 @@ function levels_child_enqueue_styles() {
         array( $parent_style ),
         wp_get_theme()->get('Version')
     );
+    /* Font Awesome too */
+    wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css' );
 }
+
 add_action( 'wp_enqueue_scripts', 'levels_child_enqueue_styles' );
 
 // Display CSS inside of Visual Editor in the Admin
