@@ -39,7 +39,9 @@ h5,
   color: #444;
   position: relative;
   font-family: 'Anonymous Pro', monospace;
-  font-style: normal; }
+  font-style: normal;
+  font-weight: 700;
+}
 
 h1, h2 {
   font-weight: 700;

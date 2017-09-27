@@ -21,7 +21,7 @@
             'width' => '100%'
         ), $atts, 'mm-button'
       );
-     // create course
+     // create button
      return
        '<a class="button ' . $atts[style] . '" href="' . $atts[link] . '" style="width:' . $atts[width] . ';">' . do_shortcode($content) . '</a>';
    }
@@ -29,16 +29,35 @@
 
    // [u-highlight] shortcode
    function shortcode_mm_uhighlight( $atts, $content = null ) {
-     $atts = shortcode_atts(
-        array(
-            'style' => '',
-            'link' => '#',
-            'width' => '100%'
-        ), $atts, 'mm-button'
-      );
-     // create course
      return
       '<div class="container container--normal u-highlight">' . do_shortcode($content) . '</div>';
    }
    add_shortcode('u-highlight', 'shortcode_mm_uhighlight');
+
+   // [mm-callout] shortcode
+   function shortcode_mm_callout( $atts, $content = null ) {
+     $atts = shortcode_atts(
+        array(
+            'header' => '',
+            'ptext' => '',
+            'action' => '',
+            'btn-class' => 'button',
+            'width' => '100%'
+        ), $atts, 'mm-callout'
+      );
+     // create callout
+     return
+      '<div class="callout-box callout-box--spaced mm-callout-box">' .
+      '<div class="callout-box__content-left"><h2>' $atts[header] . '</h2>' .
+      '<p class="u-center">' . $atts[ptext] . '</p></div>' .
+      '<div class="callout-box__content-right">' .
+      '<form class="form-vertical" action="'. $atts[action] . '">'
+      '<div class="form-vertical__row"><label class="form-vertical__label" for="name">First Name</label>' .
+      '<input class="form-input-text" name="name" type="text" /></div>' .
+      '<div class="form-vertical__row"><label class="form-vertical__label" for="name">Email</label>' .
+      '<input class="form-input-text" name="email" type="email" /></div>' .
+      '<div class="form-vertical__row--submit">'
+      '<button class="button" type="submit">Sign up for your free chapter</button>' . do_shortcode($content) . '</div></form></div></div>';
+   }
+   add_shortcode('mm-callout', 'shortcode_mm_callout');
  ?>

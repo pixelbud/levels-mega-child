@@ -46,6 +46,7 @@ input#search.mm-search-input {
   outline: none;
   padding-left: 10px;
   font-family: Lora, serif;
+  border: #fff solid 1px;
 }
 
 #mm-search-form .fa-search {
@@ -179,6 +180,77 @@ input#search.mm-search-input {
 
       .author__image {
         max-width: 100%; }
+
+/**
+  * MegaMaker Callout Box
+  */
+
+.callout-box.callout-box--spaced.mm-callout-box {
+  position: relative;
+  background-color: #ffffff;
+  border: solid 4px #aa1f1f;
+  padding: 20px 30px 10px 30px;
+  vertical-align: top;
+  }
+
+  .callout-box.callout-box--spaced.mm-callout-box:before {
+    width: calc(100% - 4px);
+    height: 4px;
+    background-color: #aa1f1f;
+    display: block;
+    position: absolute;
+    bottom: -4px;
+    left: 2px;
+    content: " ";
+    z-index: -1; }
+
+.callout-box.callout-box--spaced.mm-callout-box h2 {
+  line-height: normal;
+}
+
+.callout-box.callout-box--spaced.mm-callout-box label {
+  font-weight: normal;
+  font-size: 1em;
+}
+
+        /**
+         * Callout Box
+         */
+        .callout-box {
+          background: #fafafa;
+          overflow: visible;
+          padding: 0 2em 1em 2em;
+          margin-bottom: 2em;
+          border-radius: 0;
+          box-shadow: none;
+          border: 1px solid #eee;
+          border-left: none;
+          max-width: 68em;
+          margin-left: auto;
+          margin-right: auto; }
+          .callout-box::after {
+            clear: both;
+            content: "";
+            display: table; }
+          @media screen and (min-width: 650px) {
+            .callout-box__content-left {
+              float: left;
+              display: block;
+              margin-right: 2.35765%;
+              width: 40.29137%; }
+              .callout-box__content-left:last-child {
+                margin-right: 0; } }
+          @media screen and (min-width: 650px) {
+            .callout-box__content-right {
+              float: left;
+              display: block;
+              margin-right: 2.35765%;
+              width: 57.35098%; }
+              .callout-box__content-right:last-child {
+                margin-right: 0; } }
+          @media screen and (min-width: 650px) {
+            .callout-box--spaced {
+              margin: 4em 0 2em 0; } }
 
 /* Media Queries */
 
