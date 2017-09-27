@@ -1,10 +1,10 @@
 /* Set the typeface */
 .header {
-  font-family: 'Anonymous Pro', sans-serif;
+  font-family: 'Anonymous Pro', monospace;
 }
 
 .quote__text {
-  font-family: 'Anonymous Pro', sans-serif;
+  font-family: 'Anonymous Pro', monospace;
   font-style: normal;
   font-weight: 700;
 }
@@ -13,7 +13,11 @@
   border-left: #EBEBEB solid 6px;
   background: rgba(235,235,235,.5);
   font-style: normal;
-  font-weight: 400; }
+  font-weight: 400;
+  font-family: 'Anonymous Pro', monospace;
+  padding: 20px 20px 10px 20px;
+  margin-bottom: 40px;
+}
 
 body {
   font-size: 1em;
@@ -34,7 +38,7 @@ h5,
 .section-heading {
   color: #444;
   position: relative;
-  font-family: 'Anonymous Pro', sans-serif;
+  font-family: 'Anonymous Pro', monospace;
   font-style: normal; }
 
 h1, h2 {
