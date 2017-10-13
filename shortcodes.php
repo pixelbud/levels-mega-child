@@ -12,6 +12,16 @@
    }
    add_shortcode('mm-header', 'shortcode_mm_header');
 
+   // [mm-header] shortcode
+   function shortcode_mm_slim_header( $atts, $content = null ) {
+
+     // create expanded header for page template
+     return
+
+       '<div class="break"><header class="header header--wp header--mm-slim"><div class="container container--widened" style="position: relative;">' . do_shortcode($content) . '</div></header></div>';
+   }
+   add_shortcode('mm-slim-header', 'shortcode_mm_slim_header');
+
    // [mm-button] shortcode
    function shortcode_mm_button( $atts, $content = null ) {
      $atts = shortcode_atts(

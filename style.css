@@ -26,6 +26,19 @@
   margin-bottom: 3em;
 }
 
+.header--mm-slim {
+  width: 100%;
+  background-color: #B71C1C;
+  padding: 0 !important;
+  min-height: 124px;
+  background: linear-gradient(315deg, #842426 0%, #8E2324 20%, #982222 40%, #A22120 60%, #AD1F1E 80%, #B71C1C 100%);
+  margin-bottom: 3em;
+}
+
+.header__bottom-right {
+  float: right;
+}
+
 /* For the Dark Header Page Template */
 .page-template-page-templatespage_dark-header-php #content { margin-top: 55px; }
 
@@ -54,6 +67,18 @@ input#search.mm-search-input {
   margin-left: -30px;
 }
 
+/* For the Slim Page Template */
+.mm-logo {
+  float: left;
+  margin: 16px 10px 0 0;
+}
+
+.large--lightest-right-header {
+  float: right;
+  width: auto !important;
+  margin: 42px 0 0 0;
+}
+
 /**
  * Buttons
  */
@@ -69,7 +94,20 @@ input#search.mm-search-input {
   line-height: 1;
   padding: 15px 37px 13px 38px;
   text-shadow: none;
+}
+
+.large--lightest-centered {
   margin: 8px auto;
+}
+
+.large--lightest-right {
+  position: absolute;
+  width: auto !important;
+  vertical-align: middle;
+  top: 50%;
+  right: 0;
+  margin: -2% 0 0 0;
+  z-index: 10000000;
 }
 
 .large--lightest:hover {
