@@ -1656,6 +1656,18 @@ a.large--lightest:hover {
   z-index: 10000000;
 }
 
+li.nav-large--lightest a {
+  font-family: 'Anonymous Pro', sans-serif;
+  font-weight: normal;
+  border-radius: 100px;
+  background: #fff;
+  color: rgba(0, 0, 0, 1);
+  font-size: 16px;
+  line-height: 1;
+  padding: 12px 16px 10px 16px;
+  margin-top: -4px;
+}
+
 .large--default {
   font-size: 18px;
   line-height: 1;
