@@ -234,3 +234,16 @@ function add_levels_theme_menu_item()
 
 add_action("admin_menu", "add_levels_theme_menu_item");
 add_action("admin_init", "display_theme_panel_fields");
+
+/* Remove default 'Category:' from Archive title */
+
+add_filter( 'get_the_archive_title', function ($title) {
+    if ( is_category() ) {
+            $title = single_cat_title( '', false );
+        } elseif ( is_tag() ) {
+            $title = single_tag_title( '', false );
+        } elseif ( is_author() ) {
+            $title = '<span class="vcard">' . get_the_author() . '</span>' ;
+        }
+    return $title;
+});
