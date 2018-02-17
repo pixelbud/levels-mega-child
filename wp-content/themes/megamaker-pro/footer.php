@@ -16,7 +16,12 @@
 	<footer id="colophon" class="footer" role="contentinfo">
     <div class="container container--grid">
   		<div class="footer__bottom">
-        <p class="footer__bottom-right"><?php echo get_option('footer_content_right') ?></p>
+        <p class="footer__bottom-right">
+					<?php
+						if (empty(get_option('footer_content_right'))) {
+							echo "Made with ♥ by Justin Jackson. &copy; " . date("Y") . " Nerd North, Inc.";
+						}
+						?></p>
         <p><?php echo get_option('footer_content_left') ?></p>
 				<p><?php echo get_search_form(); ?></p>
       </div>
